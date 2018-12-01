@@ -1,0 +1,15 @@
+{% extends 'gpscraper/base.html' %}
+{% block body %}
+
+        <h1>GPS Scraper</h1>
+        <h4>
+          It is web crowling dynamic application .It uses latest django 2.1 framework and beautifulsoup library to scrape out data 
+          from google play store and dynamically saving to database.
+          It uses latest web scraping techniques such as following broadcrumbs.
+          In this application we're using beautifulsoups to parse data from google play store.
+          This parsing is initated by request library of python where django requests googleplay store for some data and beautiful soup enters the pictures and accepts the handeshake where the handshaker is formed
+           beautiful uses it xml/hml parse to get meta information  of application
+          All scrapts data is saved into db corresponding to the fields that has been constructing defind as models. The logic behind saving as models.
+           The  logic behind saving the data in database is when the user  query for the save applicaion in the fields. The application will look for the data in application if it is exist it will render the specific data instead of scraping it again.
+        </h4>
+{% endblock %}
